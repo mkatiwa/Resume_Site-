@@ -18,7 +18,7 @@ In this section, you can find a comprehensive list of my current skills.
 In this section, I provide a brief description of myself.
 
 ### contact
-In this section, you can find the certificates I have attained.
+In this section, you can find my social meadia profiles you can contact me with.
 
 ## Thank You
 
