@@ -5,21 +5,144 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Responsive Design - Resume Site </title>
     <link rel="stylesheet" href="style.css">
+    <script
+      src="https://kit.fontawesome.com/67ba13c4ba.js"
+      crossorigin="anonymous"
+    ></script>
+    <!--import fontawesome for the icons to appear in Contact me -->
+    <script src="script.js"></script>
 </head>
 <body>
 <div id="header">
     <div class="container">
         <nav>
-            <img src="Images/my logo.png" class="logo">
+            <img src="" class="logo">
             <ul>
-                <li><a href="#">home</a></li>
-                <li><a href="#">about</a></li>
-                <li><a href="#">portfolio</a></li>
-                <li><a href="#">contact</a></li>
+                <li><a href="#header">home</a></li>
+                <li><a href="#about">about</a></li>
+                <li><a href="#portfolio">portfolio</a></li>
+                <li><a href="#contact">contact</a></li>
             </ul>
         </nav>
+        <div class="header-text">
+            <p>Mawia Katiwa.</p>
+            <h1> Hello, I am <span>Mawia</span><br>Katiwa From Kenya</h1>
+        </div>
     </div>
 </div>
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="Images/web.png.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>Hello! I'm Mawia Katiwa, a passionate software engineering student. I thrive on coding and am particularly drawn to full-stack web development. Proficient in languages like Python and JavaScript, I'm eager to create innovative solutions. My academic journey has been marked by completing several projects on basic programming, Front-End Web Development, Web Infrastructure, and Enterprise Web Development. My career inspiration is to become a Full-Stack Developer. When I'm not at my keyboard, you'll find me in sports activities.</p>
+
+                <div class="tab-tittles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links active-link" onclick="opentab('Experience')">Experience</p>
+                    <p class="tab-links active-link" onclick="opentab('Education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Front-End Web Development</span><br>Designing front part of a website</li>
+                        <li><span>Foundation of computer science and engineering</span><br>programming</li>
+                        <li><span>Enterprise web development</span><br>Designing websites</li>
+                    </ul>
+                </div>
+
+                <div class="tab-contents" id="Experience">
+                    <ul>
+                        <li><span>Enterprice Web Development</span><br>Current- August,2023 - October, 2023</li>
+                        <li><span>Front-End Web Development</span><br>May, 2023 - July, 2023</li>
+                        <li><span>Foundation of computer science and engineering</span><br>Jan,2023 - april, 2023</li>
+                    </ul>
+                </div>
+
+                <div class="tab-contents" id="Education">
+                    <ul>
+                        <li><span>University_African Leadership University</span><br>2022 - 2026 </li>
+                        <li><span>High school_Daraja Academy</span><br>2018 - 2021</li>
+                        <li><span>Primary_Miambani Primary School</span><br>2010 - 2017</li>
+                    </ul>
+                </div>
+
+                
+                
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="portfolio">
+    <div class="container">
+        <div class="row">
+            <div class="work-col-1">
+                <img src="Images/my work.png">
+            </div>
+            <div class="work-col-2">
+                <h1 class="sub-title">My Work</h1>
+                <div class="layer">
+                    <h3>My github Account</h3>
+                    <p>This github account gives you access to codes of certain projects have worked on.</p>
+                    <p>click the icon below to acces my github</p>
+                    <a href="https://github.com/mkatiwa"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-envelope"></i>m.katiwa@alustudent.com</p>
+                <p><i class="fa-solid fa-phone"></i> +254792281262</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/mawia-katiwa-61b71026b/"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+              <a href="https://github.com/mkatiwa"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+                </div>
+                <a href="Images/my Cv pdf.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right"></div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p><p>Copyright © 2022 Mawia Katiwa</p></p>
+    </div>
+</div>
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab.links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+
+</script>
 
 </body>
 </html>
